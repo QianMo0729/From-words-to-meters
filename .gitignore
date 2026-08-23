@@ -31,11 +31,15 @@ __pycache__/
 
 
 # ====================
-# Local D6 evidence
+# Results
 # ====================
 
 
-results/
+results/draw_test/*
+!results/draw_test/.gitkeep
+
+results/visibility_test/*
+!results/visibility_test/.gitkeep
 
 
 # ====================
