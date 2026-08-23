@@ -38,8 +38,7 @@ def camera_to_pixel(points_camera: np.ndarray, K: np.ndarray):
 
 
 def project(points_world: np.ndarray, K: np.ndarray, Rtilt: np.ndarray):
-    points_camera = world_to_camera(points_world, Rtilt)
-    return camera_to_pixel(points_camera, K)
+    return camera_to_pixel(world_to_camera(points_world, Rtilt), K)
 
 
 def box_corners(box):
